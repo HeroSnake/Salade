@@ -21,16 +21,16 @@
 	let url = 'https://www.atelierduchef.fr/wp-content/uploads/'+year+'/'+month+'/menus-semaine-'+week+'.pdf';
 
 	const salads = [
-		{ id: 1, name: "César" },
+		{ id: 1, name: "CÃ©sar" },
 		{ id: 2, name: "New Yorkaise" },
-		{ id: 3, name: "Niçoise" },
+		{ id: 3, name: "NiÃ§oise" },
 		{ id: 4, name: "Lyonnaise" },
 		{ id: 5, name: "Bressane" },
 		{ id: 6, name: "Savoyarde" },
-		{ id: 7, name: "Fermière" },
-		{ id: 8, name: "Chèvre" },
+		{ id: 7, name: "FermiÃ¨re" },
+		{ id: 8, name: "ChÃ¨vre" },
 		{ id: 9, name: "Nordique" },
-		{ id: 10, name: "Péruvienne" },
+		{ id: 10, name: "PÃ©ruvienne" },
 		{ id: 11, name: "Autre..." }
 	];
 	
@@ -80,7 +80,7 @@
 		})
 		let totalOrder = formatter.format(totals);
 		email += `%0D%0A Total : ${totalOrder}`;
-		email += `%0D%0A %0D%0A Merci %0D%0A %0D%0A Vinatis %0D%0A 6 Avenue du Pré de Challes, %0D%0A 74940 Annecy-le-Vieux`;
+		email += `%0D%0A %0D%0A Merci %0D%0A %0D%0A Vinatis %0D%0A 6 Avenue du PrÃ© de Challes, %0D%0A 74940 Annecy-le-Vieux`;
 		window.location.href = email;
 	}
 	
