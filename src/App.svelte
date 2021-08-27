@@ -42,8 +42,8 @@
 	]
 	
 	const sizes = [
-		{ label:"Pte", price: 5.5 },
-		{ label: "Gde", price: 7.5 }
+		{ label:"Pte", price: 5.6 },
+		{ label: "Gde", price: 7.6 }
 	];
 	
 	const orderInitialValues = {
@@ -52,7 +52,7 @@
 		salad: salads[0].name,
 		size: sizes[0],
 		bread: false,
-		price: 5.5,
+		price: 5.6,
 		total: 0
 	};
 	
