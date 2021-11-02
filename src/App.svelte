@@ -92,16 +92,18 @@
 	}, 0)
 </script>
 
-{#each orders as order (order.id)}
-<div style="display:flex; justify-content:space-between;">
-	<Line bind:order={order} {salads} {sizes} {defaultOrders}/>
-	<button on:click={() => deleteOrder(order.id)}>
-		<Icon data={faTrash} style="color:#d94343;"/>
-	</button>
+<div style="margin:auto;width:650px;margin-top:50px;">
+	{#each orders as order (order.id)}
+	<div style="display:flex; justify-content:space-between;">
+		<Line bind:order={order} {salads} {sizes} {defaultOrders}/>
+		<button on:click={() => deleteOrder(order.id)}>
+			<Icon data={faTrash} style="color:#d94343;"/>
+		</button>
+	</div>
+	{/each}
+	<div>Total : {formatter.format(totals)}</div>
+	<button on:click={addOrder}><Icon data={faPlus} scale="0.8"/> Commande</button>
+	<button on:click={exportOrders}><Icon data={faPaperPlane} style="color:#2361b0;"/></button>
+	<button on:click={openCart}><Icon data={faMap} style="color:#814600;"/></button>
 </div>
-{/each}
-<div>Total : {formatter.format(totals)}</div>
-<button on:click={addOrder}><Icon data={faPlus} scale="0.8"/> Commande</button>
-<button on:click={exportOrders}><Icon data={faPaperPlane} style="color:#2361b0;"/></button>
-<button on:click={openCart}><Icon data={faMap} style="color:#814600;"/></button>
 
